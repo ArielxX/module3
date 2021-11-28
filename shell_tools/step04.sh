@@ -1,1 +1,1 @@
-find -name "*.html" | xargs tar -cvf compress_files04.zip --remove-files
+find -name "*.html" -print0 | xargs -0 tar -cvf compress_files04.zip
